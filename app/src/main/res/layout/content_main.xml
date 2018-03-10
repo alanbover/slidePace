@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#403E46"
+    android:focusable="true"
+    android:paddingTop="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.alan.slidepace.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:background="#403E46"
+            android:cropToPadding="false"
+            android:elevation="0dp"
+            android:rotation="270"
+            app:srcCompat="@drawable/ic_arrow_point_to_right"
+            tools:layout_editor_absoluteX="94dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#403E46"
+                android:cropToPadding="false"
+                android:elevation="0dp"
+                android:rotation="180"
+                app:srcCompat="@drawable/ic_arrow_point_to_right" />
+
+            <ImageButton
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:background="#403E46"
+                android:cropToPadding="false"
+                android:elevation="0dp"
+                app:srcCompat="@drawable/ic_arrow_point_to_right" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:background="#403E46"
+            android:cropToPadding="false"
+            android:elevation="0dp"
+            android:rotation="90"
+            app:srcCompat="@drawable/ic_arrow_point_to_right"
+            tools:layout_editor_absoluteX="94dp" />
+
+        <TextView
+            android:id="@+id/textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:elegantTextHeight="false"
+            android:elevation="0dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="slidepace"
+            android:textAlignment="center"
+            android:textColor="#FFCC80"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
